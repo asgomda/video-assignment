@@ -1,10 +1,4 @@
-p {
-    line-height: 1.33em;
-    color: #7E7E7E;
-}
-h1 {
-    color: #EEEEEE;
-}
+
 
 #loader-wrapper {
     position: fixed;
@@ -24,7 +18,7 @@ h1 {
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #3498db;
+    border-top-color: #57068c;
 
     -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -41,7 +35,7 @@ h1 {
         bottom: 5px;
         border-radius: 50%;
         border: 3px solid transparent;
-        border-top-color: #e74c3c;
+        border-top-color: #ab82c5;
 
         -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
         animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -56,7 +50,7 @@ h1 {
         bottom: 15px;
         border-radius: 50%;
         border: 3px solid transparent;
-        border-top-color: #f9c922;
+        border-top-color: #b8b8b8;
 
         -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
           animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -142,17 +136,63 @@ h1 {
                 transition: all 0.3s 1s ease-out;
     }
 
-    /* JavaScript Turned Off */
-    .no-js #loader-wrapper {
-        display: none;
-    }
-    .no-js h1 {
-        color: #222222;
+#content {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        position: relative;
     }
 
-    #content {
-        margin: 0 auto;
-        padding-bottom: 50px;
-        width: 80%;
-        max-width: 978px;
-    }  
+    #content video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      position: absolute;
+    }
+
+    .button {
+      position: absolute;
+      left: 10px;
+      top: 730px;
+      border: 0;
+      background: transparent;
+      box-sizing: border-box;
+      width: 0;
+      height: 74px;
+      border-color: transparent transparent transparent #57068c;
+      transition: 100ms all ease;
+      cursor: pointer;
+      border-style: solid;
+      border-width: 37px 0 37px 60px;
+    }
+
+      .paused {
+        border-style: double;
+        border-width: 0px 0 0px 60px;
+      }
+
+      :hover {
+        border-color: transparent transparent transparent #ab82c5;
+      }
+
+
+.next {
+  position: absolute;
+  right: 10px;
+  top: 750px;
+  width:100px;
+  height:30px;
+  display: hidden;
+}
+.next:before {
+  content: "";
+  background: #57068c;
+  width:15px;
+  clip-path: polygon(0 10px,calc(100% - 15px) 10px,calc(100% - 15px) 0,100% 50%,calc(100% - 15px) 100%,calc(100% - 15px) calc(100% - 10px),0 calc(100% - 10px));
+  animation: next 1s infinite linear;
+}
+@keyframes next {
+  90%,100%{flex-grow: 1}
+}

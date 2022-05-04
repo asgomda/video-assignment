@@ -151,7 +151,7 @@ html {
 .next {
   position: absolute;
   right: 10px;
-  top: 750px;
+  top: 90vh;
   width:100px;
   height:30px;
   display: hidden;
@@ -166,6 +166,14 @@ html {
 }
 @keyframes next {
   90%,100%{flex-grow: 1}
+}
+
+@media screen and (min-width: 4000px) {
+  .video-container .video {
+    height: 40.5rem;
+    width: 72rem;
+    overflow: hidden;
+  }
 }
 
 /*.video-container video .active:hover {

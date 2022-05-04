@@ -1,5 +1,3 @@
-
-
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -155,7 +153,7 @@
     .button {
       position: absolute;
       left: 10px;
-      top: 730px;
+      top: 87vh;
       border: 0;
       background: transparent;
       box-sizing: border-box;
@@ -181,7 +179,7 @@
 .next {
   position: absolute;
   right: 10px;
-  top: 750px;
+  top: 90vh;
   width:100px;
   height:30px;
   display: hidden;

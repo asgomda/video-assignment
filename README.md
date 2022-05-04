@@ -10,5 +10,12 @@ We chose option 1 from the assignment prompt. Our project is about a mystery cri
 ### Process: 
 *How did you go about implementing the concept.*
 
+1. Drafting the story
+2. Seperating the scenes
+3. Making a wireframe
+4. Filming and recording audio
+5. Editing the video and audio
+6. Working on the website
+
 ### Reflection/Evaluation: 
 *This should bookend the initial concept and talk about whether your expectations and goals were met in the process of building the final working version.*

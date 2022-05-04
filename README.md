@@ -1,6 +1,7 @@
 # VID-E-OH!- Assignment 4
 ### Project Name:
-*Title*
+*Who Stole the Trophy at NYUAD?*
+
 
 ### Project Description: 
 *what is the project, what is the overall concept and theme, and what kind of experience you were striving to create.*

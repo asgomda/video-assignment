@@ -12,20 +12,65 @@
       <div class="heading">
         <h1> Help the Detective Interview Persons of Interest </h1>
       </div>
+
       <div class="video-container">
-        <video class="video">
-          <source src="video1.mp4" type="video/mp4">
+
+        <div class="video-box">
+        <video class="video" id="video1" src="video1.mp4" type="video/mp4">
         </video>
-        <video class="video">
-          <source src="video2.mp4" type="video/mp4">
+       <div class="video-overlay" id="overlay1">
+          <div class="video-title">
+            Faculty
+          </div>
+          <p class="video-desc"> The Professor teaching Forensics 101. </p>
+        </div>
+        </div>
+
+        <div class="video-box">
+        <video class="video" id="video2" src="video2.mp4" type="video/mp4">
         </video>
-        <video class="video">
-          <source src="video3.mp4" type="video/mp4">
-        </video>
-        <video class="video">
-          <source src="video4.mp4" type="video/mp4">
-        </video>
+          <div class="video-overlay" id="overlay2">
+            <div class="video-title">
+              Upperclassman soccer player
+            </div>
+            <p class="video-desc"> An upperclassman student, a member of the soccer team. </p>
+        </div>
       </div>
+
+        <div class="video-box">
+        <video class="video" id="video3" src="video3.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay" id="overlay3">
+          <div class="video-title">
+            Underclassman student
+          </div>
+          <p class="video-desc"> An underclassman student last seen at the crime scene. </p>
+      </div>
+        </div>
+
+        <div class="video-box">
+        <video class="video" id="video4" src="video4.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay" id="overlay4">
+          <div class="video-title">
+            Upperclassman student witness
+          </div>
+          <p class="video-desc"> An upperclassman student who noticed the trophy going missing. </p>
+      </div>
+      </div>
+
+    </div>
+
+    <div class="popup-video">
+      <span>&times;</span>
+      <video class="video" muted autoplay controls>
+        <source src="video1.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="next"> </div>
+    </div>
+    
     </div>
   </body>
 </html>

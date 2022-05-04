@@ -29,13 +29,13 @@ $(document).ready(function() {
     
     if(window.innerHeight > window.innerWidth){
       //Generate random Width % [10, 60]
-      var randomWidth = randomIntFromInterval(50, 100);
+      var randomWidth = randomIntFromInterval(150, 250);
       $(this).css({
         width: randomWidth + '%'
       });
     } else {
       //Change Height to [100, 330] randomly
-      var randomHeight = randomIntFromInterval(100, 330);
+      var randomHeight = randomIntFromInterval(170, 330);
       //Calc proportional width
       var proportionalWidth = (imgWidth * randomHeight) / imgHeight; 
       $(this).css({

@@ -69,7 +69,8 @@ p {
 .mood-board {
   width: 100%;
   height: 100vh;
-  background: #ffeecc;
+  background: url(./images/background.jpg);
+  background-size: cover;
   position: relative;
 }
 .mood-board .title {

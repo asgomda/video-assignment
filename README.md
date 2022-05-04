@@ -15,7 +15,7 @@ We chose option 1 from the assignment prompt. Our project is about a mystery cri
 2. Writing the script and seperating the scenes for shooting
 3. Making a wireframe
 4. Filming and recording audio: We booked the camera and all the equipment and shot the scenes in several days. While filming, we also were using the zom audio recorder.
-5. Editing the video and audio: We synced the audio and video using Adobe Premiere (We were able to do that because we used the clap technique that made it easier to align the ausio and video).
+5. Editing the video and audio: We synced the audio and video using Adobe Premiere (We were able to do that because we used the clap technique that made it easier to align the audio and video).
 6. Working on the website
 
 **Wireframe**

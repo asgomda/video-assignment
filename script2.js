@@ -57,9 +57,12 @@ overlay4.addEventListener('click', function(){
 //};
 
 var closeVid = document.querySelector('.popup-video span');
+var videoPlaying =  document.querySelector('.popup-video video');
 
 closeVid.addEventListener('click', function(){
   document.querySelector('.popup-video').style.display = 'none';
+  videoPlaying.pause();
+  videoPlaying.currentTime = 0;
 })
 
 var next = document.querySelector('.next');

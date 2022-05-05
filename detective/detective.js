@@ -15,8 +15,8 @@ $(document).ready(function() {
   
 
 //   setting the video width and height properties
-video.style.width = width + "px";
-video.style.height = height + "px";
+video.style.width = width-5 + "px";
+video.style.height = height-5+ "px";
 
 
 

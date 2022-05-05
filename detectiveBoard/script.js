@@ -6,11 +6,11 @@ $(document).ready(function() {
   element.each( setRandomSize );
   element.each( setRandomPosition );
   
-  resizable.resizable({
-        containment: "#background",
-        aspectRatio: true,
-        handles: "n, w, s, e"
-  });
+  // resizable.resizable({
+  //       containment: "#background",
+  //       aspectRatio: true,
+  //       handles: "n, w, s, e"
+  // });
 
   draggable.draggable({
       cursor: "move",
@@ -29,13 +29,13 @@ $(document).ready(function() {
     
     if(window.innerHeight > window.innerWidth){
       //Generate random Width % [10, 60]
-      var randomWidth = randomIntFromInterval(150, 250);
+      var randomWidth = randomIntFromInterval(350, 450);
       $(this).css({
         width: randomWidth + '%'
       });
     } else {
       //Change Height to [100, 330] randomly
-      var randomHeight = randomIntFromInterval(170, 330);
+      var randomHeight = randomIntFromInterval(270, 430);
       //Calc proportional width
       var proportionalWidth = (imgWidth * randomHeight) / imgHeight; 
       $(this).css({
@@ -62,4 +62,16 @@ $(document).ready(function() {
   }
 
 });
+
+var next = document.querySelector('.next');
+$(document).ready(function() {
+    setTimeout(function(){
+        next.style.display = "flex";
+    }, 10000);
+
+});
+
+next.onclick= function(){
+   location.href = "../detective/detective.html";
+};
 

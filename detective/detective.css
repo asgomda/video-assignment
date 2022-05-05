@@ -1,3 +1,12 @@
+.home{
+  position:fixed;
+  z-index: 9;
+
+}
+.home a{
+  font-size: 2.5rem;
+}
+
 .wrapper{
     position: fixed;
     top: 90%;
@@ -7,7 +16,7 @@
     display: none;
   }
   
-  a{
+  .wrapper a{
     display: block;
     width: 200px;
     height: 40px;
@@ -24,27 +33,27 @@
     /* z-index: 9; */
   }
   
-  a span{
+  .wrapper a span{
     position: relative;
     z-index: 2;
   }
   
-  a:after{
+  .wrapper a:after{
     position: absolute;
     content: "";
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background: #ff003b;
+    background: #57068c;
     transition: all .35s;
   }
   
-  a:hover{
+  .wrapper a:hover{
     color: #fff;
   }
   
-  a:hover:after{
+  .wrapper a:hover:after{
     width: 100%;
   }
 
@@ -67,7 +76,7 @@
 .button {
   position: absolute;
   left: 10px;
-  top: 730px;
+  top: 87vh;
   border: 0;
   background: transparent;
   box-sizing: border-box;
@@ -93,7 +102,7 @@
 .next {
 position: absolute;
 right: 10px;
-top: 750px;
+top: 90vh;
 width:100px;
 height:30px;
 display: hidden;

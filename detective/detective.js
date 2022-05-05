@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  setTimeout(function(){
+      $('body').addClass('loaded');
+  }, 6000);
+
+});
+
+$(document).ready(function() {
     var btn = $(".button");
     btn.click(function() {
       btn.toggleClass("paused");

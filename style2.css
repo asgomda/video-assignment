@@ -13,7 +13,7 @@ html {
 .heading {
   text-align: center;
 }
-
+/*Heading typewriter effect*/
 .heading h1 {
   padding: 10px;
   max-width: 80%;
@@ -23,12 +23,12 @@ html {
   border-right: .15em solid  #57068c; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .15em;
   animation:
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
 }
-
+/*Typewriter animation*/
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
@@ -38,7 +38,7 @@ html {
   from, to { border-color: transparent }
   50% { border-color:  #57068c }
 }
-
+/*Styling the videos*/
 .video-container {
   padding-top: 50px;
   display: flex;
@@ -60,28 +60,12 @@ html {
   border: none;
   cursor: pointer;
 }
-/*
-.video-container video:hover{
-  transition: 0.2s linear;
-}
 
-
-.video-container video .active {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-height: 100%;
-  min-width: 100%;
-  z-index: 1000;
-  box-shadow: 0 0 0 100vh rgba(0,0,0,.7);
-}
-*/
 .video-box {
   position: relative;
   margin: 1rem;
 }
-
+/*Overlay text over videos*/
 .video-overlay {
   position: absolute;
   top: 0;
@@ -97,12 +81,12 @@ html {
   opacity: 0;
   transition: opacity 0.25s;
 }
-
+/*Overlay appears with transition*/
 .video-overlay > * {
   transform: translateY(20px);
   transition: transform 0.25s;
 }
-
+/*Overlay appears upon hovers*/
 .video-overlay:hover {
   opacity: 1;
 }
@@ -115,7 +99,7 @@ html {
   font-size: 1.8rem;
   font-weight: bold;
 }
-
+/*Pop-up video*/
 .container .popup-video {
   position: fixed;
   top: 0;
@@ -135,7 +119,7 @@ html {
   width: 750px;
   object-fit: cover;
 }
-
+/* X button*/
 .container .popup-video span {
   position: absolute;
   top: 5px;
@@ -147,7 +131,7 @@ html {
   cursor: pointer;
 }
 
-
+/*"Next" button*/
 .next {
   position: absolute;
   right: 10px;
@@ -176,11 +160,8 @@ html {
   }
 }
 
-/*.video-container video .active:hover {
-  transition: none;
-  transform: translate(-50%, -50%) scale(2);
-}*/
 
+/*"Loading" text*/
 .text-under {
   color: white;
   position: absolute;
@@ -193,5 +174,5 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
 }

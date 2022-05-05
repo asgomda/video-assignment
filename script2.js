@@ -1,15 +1,5 @@
-//var video = document.querySelectorAll('.video-container video');
 
-//video.forEach(play => play.addEventListener('click', () =>{
-//  play.classList.toggle('active');
-//  if(play.paused){
-//    play.play();
-//  } else {
-//    play.pause();
-//    play.currentTime = 0;
-//  }
-//}));
-
+//Setting things up for 4 interview videos
 var video1 = document.querySelector('#video1');
 var overlay1 = document.querySelector('#overlay1');
 
@@ -22,7 +12,8 @@ var overlay3 = document.querySelector('#overlay3');
 var video4 = document.querySelector('#video4');
 var overlay4 = document.querySelector('#overlay4');
 
-
+//Show video pop-up when overlay is clicked
+//Source the video for pop-up from 'src'
 overlay1.addEventListener('click', function(){
   document.querySelector('.popup-video').style.display = 'block';
    document.querySelector('.popup-video video').src = video1.getAttribute('src');
@@ -45,26 +36,18 @@ overlay4.addEventListener('click', function(){
 })
 
 
-//document.querySelectorAll('.video-container .video-overlay').forEach(vid => {
-//  vid.onclick = () =>{
-//    document.querySelector('.popup-video').style.display = 'block';
-//    document.querySelector('.popup-video video').src = video.getAttribute('src');
-//  }
-//});
 
-//document.querySelector('.popup-video span').onclick() = () => {
-//  document.querySelector('.container .popup-video').style.display = 'none';
-//};
 
 var closeVid = document.querySelector('.popup-video span');
 var videoPlaying =  document.querySelector('.popup-video video');
 
+//When X is clicked, exit video pop-up, stop video
 closeVid.addEventListener('click', function(){
   document.querySelector('.popup-video').style.display = 'none';
   videoPlaying.pause();
   videoPlaying.currentTime = 0;
 })
-
+//Show "next" button after 5 s
 var next = document.querySelector('.next');
 $(document).ready(function() {
     setTimeout(function(){

@@ -1,3 +1,4 @@
+/* Pre-loader screen*/
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -6,6 +7,7 @@
     height: 100%;
     z-index: 1000;
 }
+/*Circle 1 in animation*/
 #loader {
     display: block;
     position: relative;
@@ -23,7 +25,7 @@
 
     z-index: 1001;
 }
-
+/*Circle 2 in animation*/
     #loader:before {
         content: "";
         position: absolute;
@@ -38,7 +40,7 @@
         -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
         animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
     }
-
+/*Circle 3 in animation*/
     #loader:after {
         content: "";
         position: absolute;
@@ -53,7 +55,7 @@
         -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
           animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
     }
-
+/*Animating*/
     @-webkit-keyframes spin {
         0%   {
             -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
@@ -99,7 +101,7 @@
         right: 0;
     }
 
-    /* Loaded */
+    /* When loaded */
     .loaded #loader-wrapper .loader-section.section-left {
         -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
             -ms-transform: translateX(-100%);  /* IE 9 */
@@ -149,7 +151,7 @@
       object-fit: cover;
       position: absolute;
     }
-
+/*Play Pause button*/
     .button {
       position: absolute;
       left: 10px;
@@ -175,7 +177,7 @@
         border-color: transparent transparent transparent #ab82c5;
       }
 
-
+/*"Next" button*/
 .next {
   position: absolute;
   right: 10px;
